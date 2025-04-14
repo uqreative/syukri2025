@@ -24,3 +24,19 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+main {
+  min-height: 100vh;
+}
+.main-visual {
+  background-color: #e1e2e3;
+  color:#555;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+header {background-color:#0a0a0a;color:#fff;padding-block:10px;}
+footer{background-color:#0a0a0a;color:#fff;padding-block:40px;}

@@ -19,6 +19,7 @@ export default function Home() {
   return (
     <div
       className={`${geistSans.className} ${geistMono.className} font-[family-name:var(--font-geist-sans)]`}
+      id="wrap"
     >
       <Header></Header>
       <main>

@@ -1,0 +1,9 @@
+.mainvisual {
+    background-color: #e1e2e3;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+.testkelas {
+    background-color: red;
+}

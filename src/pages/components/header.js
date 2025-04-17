@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Header(){
     return(
-        <header className="bg-black border-b border-gray-700">
+        <header className="bg-black border-b border-gray-700 sticky top-0 z-[99]">
             <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                  {/* lg+  */}
                 <nav className="flex items-center justify-between h-16 lg:h-20">

@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 
 import Header from "./components/header";
 import MainVisual from "./components/mainVisual";
+import Features from "./components/mainFeatures";
 import Footer from "./components/footer";
 
 const geistSans = Geist({
@@ -23,43 +24,40 @@ export default function Home() {
     >
       <Header></Header>
       <main>
-        {/* <Image
-          className="dark:invert"
-          src="/images/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        /> */}
         <MainVisual></MainVisual>
-        <h2>The quick brown fox jumps over the lazy dog</h2>
-        {/* <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div> */}
+        <Features></Features>
+
+        <section className="bg-white w-full  dark:bg-gray-900 flex flex-col items-center justify-center">
+          <div className="lg:grid lg:grid-cols-[60%_40%] lg:h-screen lg:place-content-center w-7xl">
+            <ul>
+              <li>
+                <div className="card bg-base-100 w-96 shadow-sm">
+                  <figure>
+                    <Image
+                      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                      alt="Shoes"
+                      width={400}
+                      height={400}
+                    />
+                  </figure>
+                  <div className="card-body">
+                    <h2 className="card-title">Card Title</h2>
+                    <p>
+                      A card component has a figure, a body part, and inside
+                      body there are title and actions parts
+                    </p>
+                    <div className="card-actions justify-end">
+                      <button className="btn btn-primary">Buy Now</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div>Dua</div>
+          </div>
+        </section>
       </main>
-      <Footer></Footer> 
+      <Footer></Footer>
     </div>
   );
 }
